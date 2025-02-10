@@ -1,0 +1,192 @@
+body {
+  /*https://dribbble.com/shots/4823171-HardSport-Daily-UI - example of kickboxing page*/
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/937/original/MuayThai_Red.jpg?1736956380");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Montserrat", serif;
+}
+h1 {
+  text-align: left;
+  font-family: "Tourney", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 110px;
+  padding: 5% 0 0 3%;
+  margin: 0;
+  color: #a8bbb0;
+}
+.h1-punch {
+  color: #ff2511;
+}
+h2 {
+  text-align: left;
+  margin: 0 0 10px 3.3%;
+  color: #ebe8e0;
+}
+img {
+  max-width: 100%;
+}
+p {
+  color: whitesmoke;
+  text-align: left;
+}
+a {
+  color: #a8bbb0;
+}
+footer {
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: right;
+}
+button {
+  background-color: transparent;
+  border: 2px solid #d01110;
+  color: #d01110;
+  border-radius: 30px;
+  transition: all 200ms ease;
+  cursor: grab;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+}
+button:hover {
+  color: #bfcad0;
+  border: 2px solid #bfcad0;
+}
+.btnDarker {
+  float: right;
+  padding: 10px 20px;
+  margin: 10px 10px;
+}
+
+.btnLearn {
+  font-size: 20px;
+  line-height: 22px;
+  padding: 30px 45px;
+}
+.mid-section {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 10%;
+}
+.container-1st-column {
+  max-width: 1100px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 3.3%;
+  max-height: 1000px;
+}
+.img-muaythai {
+  transition: all 250ms ease-in-out;
+  max-width: 100%;
+}
+.img-muaythai:hover {
+  filter: contrast(80%);
+  transform: scale(1.05);
+}
+.kick-boxing-gallery {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-gap: 10px;
+  grid-template-columns: repeat(10, 100px);
+  grid-template-rows: repeat(9, 100px);
+}
+.img-grid-a {
+  background-image: url("https://st4.depositphotos.com/28636318/41073/i/450/depositphotos_410735918-stock-photo-cool-girl-fighter-with-relief.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: 1 / 6;
+  grid-row: 1 / 3;
+  width: 600;
+  border-radius: 2% 30% 50% 70%;
+}
+.img-grid-b {
+  background-image: url("https://i.pinimg.com/564x/a0/d2/7f/a0d27fed79c92b59f03908727c0e75dc.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: 6 / 11;
+  grid-row: 1 / 8;
+  width: 400;
+  border-radius: 30% 2% 60% 50%;
+}
+.img-grid-c {
+  background-image: url("https://t3.ftcdn.net/jpg/03/86/13/20/360_F_386132041_2NWcfVKQBx1gjZQcNVJwoF7aOMlcRIOJ.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: 1 / 6;
+  grid-row: 3 / 6;
+  width: 600;
+  border-radius: 30% 2% 60% 2%;
+}
+
+.img-grid-d {
+  background-image: url("https://i.pinimg.com/736x/11/b9/33/11b933380ed52979577f1f7bf2bc2ce9.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: 1 / 6;
+  grid-row: 6 / 10;
+  width: 600;
+  border-radius: 60% 10% 20% 2%;
+}
+.img-grid-e {
+  background-image: url("https://www.shutterstock.com/image-photo/sexy-asian-female-muay-thai-260nw-2303778609.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: 6 / 11;
+  grid-row: 8 / 10;
+  width: 400;
+  border-radius: 2% 50% 30% 10%;
+}
+.darker {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/936/original/MuayThai_Dark.jpg?1736956373");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.darker h1 {
+  color: #ebe8e0;
+}
+.darker h2 {
+  color: #a8bbb0;
+}
+.darker footer {
+  color: #a8bbb0;
+}
+.darker-button {
+  background-color: transparent;
+  border: 2px solid #bfcad0;
+  color: #bfcad0;
+}
+.darker-button:hover {
+  color: #d01110;
+  background-color: transparent;
+  border: 2px solid #d01110;
+}
+
+.p-display-beginnerlevel {
+  display: none;
+  float: right;
+  background-color: black;
+  opacity: 0.8;
+  padding: 2px;
+  color: #bfcad0;
+  border-radius: 2px;
+}
+.p-display-intermedlevel {
+  display: none;
+  float: right;
+  background-color: black;
+  opacity: 0.8;
+  padding: 2px;
+  color: #bfcad0;
+  border-radius: 2px;
+}

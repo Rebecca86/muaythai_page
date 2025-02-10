@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Fredoka:wdth,wght@82.8,600&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Stick+No+Bills:wght@200..800&family=Teko:wght@300..700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Muay Thai</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="btnDarker">Too Bright?</button>
+    <h1>
+      KICK LIKE A MULE,
+      <div class="h1-punch">PUNCH WITH STYLE!</div>
+    </h1>
+    <h2>
+      Empowerment and Self-defense for women through
+      <a
+        href="https://www.thailandnow.in.th/arts-culture/what-is-muay-thai-discover-the-art-of-eight-limbs/#:~:text='Muay%20Thai'%20literally%20translates%20to,are%20now%20considered%20forbidden%20techniques."
+        target="_blank"
+      >
+        Muay Thai
+      </a>
+      !
+    </h2>
+    <div class="mid-section">
+      <div class="container-1st-column">
+        <div class="kick-boxing-gallery">
+          <div class="img-muaythai img-grid-a"></div>
+          <div class="img-muaythai img-grid-b"></div>
+          <div class="img-muaythai img-grid-c"></div>
+          <div class="img-muaythai img-grid-d"></div>
+          <div class="img-muaythai img-grid-e"></div>
+        </div>
+        <p>
+          Muay Thai, also known as Thai boxing, is a full-contact combat sport
+          and martial art that originated in Thailand. It's known as the "Art of
+          Eight Limbs" because it uses the fists, elbows, knees, and shins.<br /><br />
+          Learn the
+          <a
+            href="https://themartialartswoman.com/an-unrecognized-martial-art-benefit-for-women/"
+            target="_blank"
+            >Importance</a
+          >
+          of martial arts for Women!
+        </p>
+
+        <button class="btnLearn">Ready to Kick and Punch?</button>
+      </div>
+      <div class="container-2nd-column">
+        <div class="p-display-beginnerlevel">
+          You are now a Beginner:
+          <ul>
+            <li>
+              0–3 months: Focus on fundamental techniques like punches, kicks,
+              and teep kicks
+            </li>
+            <li>
+              Learn stance and guard: Practice on pads or with training partners
+            </li>
+            <li>
+              Improve fitness and coordination: You may notice improvements even
+              without sparring
+            </li>
+          </ul>
+        </div>
+        <div class="p-display-intermedlevel">
+          You are now an Intermediate:
+          <ul>
+            <li>6–12 months: Mix up combinations more comfortably</li>
+            <li>
+              Start sparring lightly: Test your timing and footwork under
+              pressure
+            </li>
+            <li>
+              Improve fitness and endurance: Knee strikes and spinning elbows
+              may feel more fluid
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Coded and styled by
+      <a
+        href="https://www.shecodes.io/graduates/159693-rebecca-lourdes"
+        target="_blank"
+        >Rebecca.</a
+      >
+    </footer>
+    <script>
+      function changetoDarkTheme() {
+        let bodyColor = document.querySelector("body");
+        let buttonText = document.querySelector(".btnDarker");
+        if (bodyColor.classList.contains("darker")) {
+          bodyColor.classList.remove("darker");
+          buttonText.classList.remove("darker-button");
+          buttonText.innerHTML = "Too Bright?";
+        } else {
+          bodyColor.classList.add("darker");
+          buttonText.classList.add("darker-button");
+          buttonText.innerHTML = "Too Dark?";
+        }
+      }
+      let darker = document.querySelector(".btnDarker");
+      darker.addEventListener("click", changetoDarkTheme);
+
+      /*1. Ask the user for Exeperience of Muay Thai. Yes - Advance. No - Beginner. Display info based on experience*/
+      function askMuayThaiLevel() {
+        let fName = askForName();
+        let level = prompt("Did you learn Muay Thai before? (yes or no)");
+        level = level.trim();
+        level = level.toLowerCase();
+        let levelDisplayInter = document.querySelector(
+          ".p-display-intermedlevel"
+        );
+        let levelDisplayBeginner = document.querySelector(
+          ".p-display-beginnerlevel"
+        );
+        if (level === "yes") {
+          levelDisplayInter.style.display = "block";
+        } else {
+          levelDisplayBeginner.style.display = "block";
+        }
+      }
+
+      function askForName() {
+        let fName = prompt("May I have your beautiful name?");
+        fName = String(fName).charAt(0).toUpperCase() + String(fName).slice(1);
+        return fName;
+      }
+
+      let buttonClick = document.querySelector(".btnLearn");
+      buttonClick.addEventListener("click", askMuayThaiLevel);
+    </script>
+  </body>
+</html>
